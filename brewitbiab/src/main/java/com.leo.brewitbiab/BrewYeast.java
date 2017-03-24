@@ -1,3 +1,4 @@
+package com.leo.brewitbiab;
 
 import java.util.*;
 
@@ -31,38 +32,35 @@ public class BrewYeast extends BrewItem {
      * @return
      */
     public Date getPackageDate() {
-        // TODO implement here
-        return null;
+        return this.packageDate;
     }
 
     /**
      * @param value
      */
     public void setPackageDate(Date value) {
-        // TODO implement here
+        this.packageDate = value;
     }
 
     /**
      * @return
      */
     public int getCellsPerPackage() {
-        // TODO implement here
-        return 0;
+        return this.cellsPerPackage;
     }
 
     /**
      * @param value
      */
     public void setCellsPerPackage(int value) {
-        // TODO implement here
+        this.cellsPerPackage = value;
     }
 
     /**
      * @return
      */
     public float getViability() {
-        // TODO implement here
-        return 0.0f;
+        return this.viability;
     }
 
 }

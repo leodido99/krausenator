@@ -1,3 +1,4 @@
+package com.leo.brewitbiab;
 
 import java.util.*;
 
@@ -10,6 +11,7 @@ public class BrewMashTemp {
      * Default constructor
      */
     public BrewMashTemp() {
+        this.steps = new ArrayList<>();
     }
 
     /**
@@ -21,15 +23,14 @@ public class BrewMashTemp {
      * @return
      */
     public ArrayList<BrewTemp> getSteps() {
-        // TODO implement here
-        return null;
+        return this.steps;
     }
 
     /**
      * @param value
      */
     public void setSteps(ArrayList<BrewTemp> value) {
-        // TODO implement here
+        this.steps = value;
     }
 
 }

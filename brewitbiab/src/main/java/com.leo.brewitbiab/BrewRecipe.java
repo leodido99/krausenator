@@ -1,3 +1,4 @@
+package com.leo.brewitbiab;
 
 import java.util.*;
 
@@ -10,6 +11,7 @@ public class BrewRecipe {
      * Default constructor
      */
     public BrewRecipe() {
+        this.items = new ArrayList<>();
     }
 
     /**
@@ -76,159 +78,147 @@ public class BrewRecipe {
      * @param item
      */
     public void addItem(BrewItem item) {
-        // TODO implement here
+        this.items.add(item);
     }
 
     /**
      * @param item
      */
     public void removeItem(BrewItem item) {
-        // TODO implement here
+        this.items.remove(item);
     }
 
     /**
      * @param value
      */
     public void setItems(ArrayList<BrewItem> value) {
-        // TODO implement here
+        this.items = value;
     }
 
     /**
      * @return
      */
     public ArrayList<BrewItem> getItems() {
-        // TODO implement here
-        return null;
+        return this.items;
     }
 
     /**
      * @return
      */
     public String getName() {
-        // TODO implement here
-        return "";
+        return this.name;
     }
 
     /**
      * @param value
      */
     public void setName(String value) {
-        // TODO implement here
+        this.name = value;
     }
 
     /**
      * @return
      */
     public String getBrewer() {
-        // TODO implement here
-        return "";
+        return this.brewer;
     }
 
     /**
      * @param value
      */
     public void setBrewer(String value) {
-        // TODO implement here
+        this.brewer = value;
     }
 
     /**
      * @return
      */
     public int getBoilDuration() {
-        // TODO implement here
-        return 0;
+        return this.boilDuration;
     }
 
     /**
      * @param value
      */
     public void setBoilDuration(int value) {
-        // TODO implement here
+        this.boilDuration = value;
     }
 
     /**
      * @return
      */
     public float getBatchSize() {
-        // TODO implement here
-        return 0.0f;
+        return this.batchSize;
     }
 
     /**
      * @param value
      */
     public void setBatchSize(float value) {
-        // TODO implement here
+        this.batchSize = value;
     }
 
     /**
      * @return
      */
     public BrewMashTemp getMashTemps() {
-        // TODO implement here
-        return null;
+        return this.mashTemps;
     }
 
     /**
      * @param value
      */
     public void setMashTemps(BrewMashTemp value) {
-        // TODO implement here
+        this.mashTemps = value;
     }
 
     /**
      * @return
      */
     public float getEstimatedOG() {
-        // TODO implement here
-        return 0.0f;
+        return this.estimatedOG;
     }
 
     /**
      * @return
      */
     public float getEstimatedFG() {
-        // TODO implement here
-        return 0.0f;
+        return this.estimatedFG;
     }
 
     /**
      * @return
      */
     public float getEstimatedIBU() {
-        // TODO implement here
-        return 0.0f;
+        return this.estimatedIBU;
     }
 
     /**
      * @return
      */
     public float getEstimatedEBC() {
-        // TODO implement here
-        return 0.0f;
+        return this.estimatedEBC;
     }
 
     /**
      * @return
      */
     public float getEstimatedABV() {
-        // TODO implement here
-        return 0.0f;
+        return this.estimatedABV;
     }
 
     /**
      * @return
      */
     public float getEfficiency() {
-        // TODO implement here
-        return 0.0f;
+        return this.efficiency;
     }
 
     /**
      * @param value
      */
     public void setEfficiency(float value) {
-        // TODO implement here
+        this.efficiency = value;
     }
 
 }

@@ -1,5 +1,4 @@
-
-import java.util.*;
+package com.leo.brewitbiab;
 
 /**
  * 
@@ -31,45 +30,42 @@ public class BrewHop extends BrewItem {
      * @param aa
      */
     public void setAlphaAcidPercentage(float aa) {
-        // TODO implement here
+        this.alphaAcidPercentage = aa;
     }
 
     /**
      * @return
      */
     public float getAlphaAcidPercentage() {
-        // TODO implement here
-        return 0.0f;
+        return this.alphaAcidPercentage;
     }
 
     /**
      * @param duration
      */
     public void setDuration(float duration) {
-        // TODO implement here
+        this.duration = duration;
     }
 
     /**
      * @return
      */
     public float getDuration() {
-        // TODO implement here
-        return 0.0f;
+        return this.duration;
     }
 
     /**
      * @param use
      */
     public void setUse(e_BrewIt_HopUse use) {
-        // TODO implement here
+        this.use = use;
     }
 
     /**
      * @return
      */
     public e_BrewIt_HopUse getUse() {
-        // TODO implement here
-        return null;
+        return this.use;
     }
 
 }

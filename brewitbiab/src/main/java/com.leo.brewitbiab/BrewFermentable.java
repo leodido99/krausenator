@@ -1,3 +1,4 @@
+package com.leo.brewitbiab;
 
 import java.util.*;
 
@@ -32,38 +33,35 @@ public class BrewFermentable extends BrewItem {
      * @param ebc
      */
     public void setEBC(float ebc) {
-        // TODO implement here
+        this.ebc = ebc;
     }
 
     /**
      * @return
      */
     public float getEBC() {
-        // TODO implement here
-        return 0.0f;
+        return this.ebc;
     }
 
     /**
      * @param gravity
      */
     public void setPotentialGravity(float gravity) {
-        // TODO implement here
+        this.potentialGravity = gravity;
     }
 
     /**
      * @return
      */
     public float getPotentialGravity() {
-        // TODO implement here
-        return 0.0f;
+        return this.potentialGravity;
     }
 
     /**
      * @return
      */
     public float getProducedGravity() {
-        // TODO implement here
-        return 0.0f;
+        return this.producedGravity;
     }
 
 }

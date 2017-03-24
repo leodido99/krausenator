@@ -1,3 +1,4 @@
+package com.leo.brewitbiab;
 
 import java.util.*;
 
@@ -32,52 +33,50 @@ public class BrewItem {
      * @param amount
      */
     public void BrewItem(String name, float amount) {
-        // TODO implement here
+        this.name = name;
+        this.amount = amount;
     }
 
     /**
      * @param name
      */
     public void setName(String name) {
-        // TODO implement here
+        this.name = name;
     }
 
     /**
      * @return
      */
     public String getName() {
-        // TODO implement here
-        return "";
+        return this.name;
     }
 
     /**
      * @param amount
      */
     public void setAmount(float amount) {
-        // TODO implement here
+        this.amount = amount;
     }
 
     /**
      * @return
      */
     public float getAmount() {
-        // TODO implement here
-        return 0.0f;
+        return this.amount;
     }
 
     /**
      * @return
      */
     public String getUnit() {
-        // TODO implement here
-        return "";
+        return this.unit;
     }
 
     /**
-     * @param value
+     * @param unit
      */
-    public void setUnit(String value) {
-        // TODO implement here
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
 }

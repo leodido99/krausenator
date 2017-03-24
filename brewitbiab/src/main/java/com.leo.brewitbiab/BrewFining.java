@@ -1,3 +1,4 @@
+package com.leo.brewitbiab;
 
 import java.util.*;
 
@@ -21,15 +22,14 @@ public class BrewFining extends BrewItem {
      * @param use
      */
     public void setUse(e_BrewIt_FiningUse use) {
-        // TODO implement here
+        this.use = use;
     }
 
     /**
      * @return
      */
     public e_BrewIt_FiningUse getUse() {
-        // TODO implement here
-        return null;
+        return this.use;
     }
 
 }

@@ -1,5 +1,4 @@
-
-import java.util.*;
+package com.leo.brewitbiab;
 
 /**
  * 
@@ -26,30 +25,28 @@ public class BrewTemp {
      * @return
      */
     public float getTemperature() {
-        // TODO implement here
-        return 0.0f;
+        return this.temperature;
     }
 
     /**
      * @param value
      */
     public void setTemperature(float value) {
-        // TODO implement here
+        this.temperature = value;
     }
 
     /**
      * @return
      */
     public int getDuration() {
-        // TODO implement here
-        return 0;
+        return this.duration;
     }
 
     /**
      * @param value
      */
     public void setDuration(int value) {
-        // TODO implement here
+        this.duration = value;
     }
 
 }
