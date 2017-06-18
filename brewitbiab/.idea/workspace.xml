@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52af06c0-2cb8-40ff-84a9-c84a320e33da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../recipetool.mdj" afterPath="$PROJECT_DIR$/../recipetool.mdj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -932,7 +931,7 @@
       <workItem from="1496999823525" duration="47000" />
       <workItem from="1496999984166" duration="288000" />
       <workItem from="1497618737919" duration="4335000" />
-      <workItem from="1497770940086" duration="1657000" />
+      <workItem from="1497770940086" duration="1682000" />
     </task>
     <task id="LOCAL-00001" summary="Work on krausenator">
       <created>1497771341380</created>
@@ -948,7 +947,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497771473009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Work on krausenator. Putting structure in place.">
+      <created>1497777622448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497777622448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -984,7 +990,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28437000" />
+    <option name="totallyTimeSpent" value="28462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="0" />
