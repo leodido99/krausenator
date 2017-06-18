@@ -90,4 +90,12 @@ public class BrewFermentable extends BrewItem {
     public void setGrainBillCalc(boolean grainBillCalc) {
         this.grainBillCalc = grainBillCalc;
     }
+
+    /**
+     * Visitor pattern accept
+     * @param visitor The visitor
+     */
+    public void accept(BrewItemVisitor visitor) {
+        visitor.visit(this);
+    }
 }

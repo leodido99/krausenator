@@ -289,7 +289,6 @@ public class BrewRecipe {
         this.efficiency = value;
     }
 
-
     /**
      * http://howtobrew.com/book/section-2/what-is-malted-grain/table-of-typical-malt-yields
      */
