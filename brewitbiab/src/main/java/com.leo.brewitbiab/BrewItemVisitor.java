@@ -27,4 +27,8 @@ public interface BrewItemVisitor {
      */
     public void visit(BrewYeast item);
 
+    /**
+     * @param item
+     */
+    public void visit(BrewItem item);
 }

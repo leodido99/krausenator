@@ -109,4 +109,8 @@ public class BrewItem {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public void accept(BrewItemVisitor visitor) {
+        visitor.visit(this);
+    }
 }

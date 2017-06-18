@@ -137,7 +137,11 @@ public class BrewRecipe {
      * Updates all values of the class
      */
     public void update() {
+        BrewItemVisitorGrainBill grainBillVisitor = new BrewItemVisitorGrainBill();
+
         for(BrewItem item : this.items) {
+            item.accept(grainBillVisitor);
+
             this.update(item);
         }
     }

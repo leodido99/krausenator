@@ -76,6 +76,7 @@ public class BrewYeast extends BrewItem {
      * Visitor pattern accept
      * @param visitor The visitor
      */
+    @Override
     public void accept(BrewItemVisitor visitor) {
         visitor.visit(this);
     }
