@@ -32,4 +32,12 @@ public class BrewFining extends BrewItem {
         return this.use;
     }
 
+    /**
+     * Returns a string describing the object
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Name: " + this.name + " Description: " + this.description + " Amount: " + this.amount + " " + this.unit + " Use: " + this.use;
+    }
 }

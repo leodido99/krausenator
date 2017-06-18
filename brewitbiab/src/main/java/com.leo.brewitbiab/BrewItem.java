@@ -1,45 +1,49 @@
 package com.leo.brewitbiab;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.*;
 
 /**
  * 
  */
+@XmlRootElement(name = "item")
 public class BrewItem {
 
     /**
      * Default constructor
      */
     public BrewItem() {
+        this.name = "";
+        this.description = "";
+        this.amount = 0.0f;
+        this.unit = "";
     }
 
     /**
      * 
      */
-    private String name;
+    protected String name;
 
     /**
      * 
      */
-    private float amount;
+    protected float amount;
 
     /**
      * 
      */
-    public String unit;
+    protected String unit;
 
     /**
-     * @param name 
-     * @param amount
+     * The item description
      */
-    public void BrewItem(String name, float amount) {
-        this.name = name;
-        this.amount = amount;
-    }
+    protected String description;
 
     /**
      * @param name
      */
+    @XmlElement
     public void setName(String name) {
         this.name = name;
     }
@@ -54,6 +58,7 @@ public class BrewItem {
     /**
      * @param amount
      */
+    @XmlElement
     public void setAmount(float amount) {
         this.amount = amount;
     }
@@ -75,8 +80,33 @@ public class BrewItem {
     /**
      * @param unit
      */
+    @XmlElement
     public void setUnit(String unit) {
         this.unit = unit;
     }
 
+    /**
+     * Returns a string describing the object
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Name: " + this.name + " Description: " + this.description + " Amount: " + this.amount + " " + this.unit;
+    }
+
+    /**
+     * Returns the item's description
+     * @return item's description
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * Sets the item's description
+     * @param description Item's description
+     */
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

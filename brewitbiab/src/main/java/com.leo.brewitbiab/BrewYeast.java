@@ -63,4 +63,13 @@ public class BrewYeast extends BrewItem {
         return this.viability;
     }
 
+    /**
+     * Returns a string describing the object
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Name: " + this.name + " Description: " + this.description + " Amount: " + this.amount + " " + this.unit + " PkgDate: " + this.packageDate + " CellsPerPkg: " + this.cellsPerPackage + " Viability:  " + this.viability;
+    }
+
 }
