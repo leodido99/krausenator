@@ -11,7 +11,15 @@ public class BrewFining extends BrewItem {
     /**
      * Default constructor
      */
-    public BrewFining() {
+    public BrewFining() { super(); }
+
+    /**
+     * Copy constructor
+     * @param item item to copy
+     */
+    public BrewFining(BrewFining item) {
+        super(item);
+        this.use = item.use;
     }
 
     /**

@@ -4,6 +4,7 @@ import com.brewitbiab.*;
 import org.junit.*;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,12 +16,17 @@ public class BrewRecipeTest {
     BrewFermentable inGrainBill;
     BrewFermentable notInGrainBill;
 
+    ArrayList<BrewFermentable> fermentables;
+    ArrayList<BrewHop> hops;
+    ArrayList<BrewFining> finings;
+    ArrayList<BrewYeast> yeasts;
+
     @Before
     public void setUp() throws FileNotFoundException {
-        BrewMarshaller<BrewFermentables> myMarshaller = new BrewMarshaller<>(BrewFermentables.class, "items/test/test_fermentables.xml");
-
-        /* Find items */
-        for(BrewFermentable myItem : myMarshaller.getMarshalled().getFermentables()) {
+        /* Fermentables */
+        BrewMarshaller<BrewFermentables> myFermMarshaller = new BrewMarshaller<>(BrewFermentables.class, "items/test/test_fermentables.xml");
+        this.fermentables = new ArrayList<>(myFermMarshaller.getMarshalled().getFermentables());
+        for(BrewFermentable myItem : myFermMarshaller.getMarshalled().getFermentables()) {
             if (this.inGrainBill == null &&  myItem.isGrainBillCalc() == true) {
                 this.inGrainBill = myItem;
             }
@@ -28,26 +34,47 @@ public class BrewRecipeTest {
                 this.notInGrainBill = myItem;
             }
         }
+        /* Hops */
+        BrewMarshaller<BrewHops> myHopMarshaller = new BrewMarshaller<>(BrewHops.class, "items/test/test_hops.xml");
+        this.hops = new ArrayList<>(myHopMarshaller.getMarshalled().getHops());
 
+        /* Finings */
+        BrewMarshaller<BrewFinings> myFinMarshaller = new BrewMarshaller<>(BrewFinings.class, "items/test/test_finings.xml");
+        this.finings = new ArrayList<>(myFinMarshaller.getMarshalled().getFinings());
 
+        /* Yeasts */
+        BrewMarshaller<BrewYeasts> myYeastMarshaller = new BrewMarshaller<>(BrewYeasts.class, "items/test/test_yeasts.xml");
+        this.yeasts = new ArrayList<>(myYeastMarshaller.getMarshalled().getYeasts());
     }
 
     @Test
     public void BrewRecipteTestGrainBillCalc() {
         BrewRecipe myRecipe = new BrewRecipe();
         BrewFermentable ferm;
-        float expected_grain_bill = 24.93f;
+        BrewHop hop;
+        BrewFining fining;
+        BrewYeast yeast;
+        float expected_grain_bill = 23.93f;
 
         /* Add items */
         ferm = new BrewFermentable(inGrainBill);
-        ferm.setAmount(2.00f);
+        ferm.setAmount(1.00f);
         myRecipe.addItem(ferm);
+        hop = new BrewHop(this.hops.get(0));
+        hop.setAmount(5.55f);
+        myRecipe.addItem(hop);
         ferm = new BrewFermentable(notInGrainBill);
         ferm.setAmount(45.34f);
         myRecipe.addItem(ferm);
+        fining = new BrewFining((this.finings.get(0)));
+        fining.setAmount(17.7f);
+        myRecipe.addItem(fining);
         ferm = new BrewFermentable(inGrainBill);
         ferm.setAmount(1.70f);
         myRecipe.addItem(ferm);
+        yeast = new BrewYeast((this.yeasts.get(0)));
+        yeast.setAmount(23.56f);
+        myRecipe.addItem(yeast);
         ferm = new BrewFermentable(inGrainBill);
         ferm.setAmount(21.23f);
         myRecipe.addItem(ferm);

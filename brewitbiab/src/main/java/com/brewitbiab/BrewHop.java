@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * 
+ *
  */
 @XmlRootElement(name = "hop")
 public class BrewHop extends BrewItem {
@@ -12,7 +12,17 @@ public class BrewHop extends BrewItem {
     /**
      * Default constructor
      */
-    public BrewHop() {
+    public BrewHop() { super(); }
+
+    /**
+     * Copy constructor
+     * @param item item to copy
+     */
+    public BrewHop(BrewHop item) {
+        super(item);
+        this.alphaAcidPercentage = item.alphaAcidPercentage;
+        this.duration = item.duration;
+        this.use = item.use;
     }
 
     /**

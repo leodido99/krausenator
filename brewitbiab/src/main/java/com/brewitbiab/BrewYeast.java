@@ -13,7 +13,21 @@ public class BrewYeast extends BrewItem {
     /**
      * Default constructor
      */
-    public BrewYeast() {
+    public BrewYeast() { super(); }
+
+    /**
+     * Copy constructor
+     * @param item item to copy
+     */
+    public BrewYeast(BrewYeast item) {
+        super(item);
+        this.attenuationMax = item.attenuationMax;
+        this.attenuationMin = item.attenuationMin;
+        this.temperatureMax = item.temperatureMax;
+        this.temperatureMin = item.temperatureMin;
+        this.packageDate = item.packageDate;
+        this.cellsPerPackage = item.cellsPerPackage;
+        this.viability = item.viability;
     }
 
     /**
