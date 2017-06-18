@@ -71,5 +71,12 @@ public class BrewYeast extends BrewItem {
     public String toString() {
         return "Name: " + this.name + " Description: " + this.description + " Amount: " + this.amount + " " + this.unit + " PkgDate: " + this.packageDate + " CellsPerPkg: " + this.cellsPerPackage + " Viability:  " + this.viability;
     }
-
+    
+    /**
+     * Visitor pattern accept
+     * @param visitor The visitor
+     */
+    public void accept(BrewItemVisitor visitor) {
+        visitor.visit(this);
+    }
 }
