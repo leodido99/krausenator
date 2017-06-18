@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Created by leonard.bise on 31.03.17.
+ * Author: leonard.bise
+ * Date: 31.03.17
+ * Description:
  */
 public class BrewMarshallerTest {
 
@@ -13,7 +15,7 @@ public class BrewMarshallerTest {
      * Test creation of a list of objects from an xml file. The objects created are BrewItem.
      */
     @Test
-    public void BrewMarshallerTest() {
+    public void BrewMarshallerTestMarshall() {
         ArrayList<BrewItem> refItems = new ArrayList<>();
         refItems.add(new BrewItem() {{ setName("My Test Item #1"); setAmount(12.5f); setUnit("kg"); }});
         refItems.add(new BrewItem() {{ setName("This is item #2"); setDescription("This is a rad description"); setAmount(123123.234f); setUnit("m"); }});
@@ -39,8 +41,8 @@ public class BrewMarshallerTest {
     @Test
     public void BrewMarshallerBrewFermentable() {
         ArrayList<BrewFermentable> refItems = new ArrayList<>();
-        refItems.add(new BrewFermentable() {{ setName("Maris Otter"); setDescription("A very nice base malt used in many beers."); setEBC(4.0f); setPotentialGravity(1.035f); setAmount(0.0f); }});
-        refItems.add(new BrewFermentable() {{ setName("Wheat Malt"); setDescription("Wheat malt is used to improve foam retention."); setEBC(2.0f); setPotentialGravity(1.030f); setAmount(0.0f); }});
+        refItems.add(new BrewFermentable() {{ setName("Maris Otter"); setDescription("A very nice base malt used in many beers."); setEBC(4.0f); setPotentialGravity(1.035f); setAmount(0.0f); setGrainBillCalc(true); }});
+        refItems.add(new BrewFermentable() {{ setName("Wheat Malt"); setDescription("Wheat malt is used to improve foam retention."); setEBC(2.0f); setPotentialGravity(1.030f); setAmount(0.0f); setGrainBillCalc(false); }});
 
         /* Create marshaller for BrewFermentable */
         BrewMarshaller<BrewFermentables> myMarshaller = new BrewMarshaller<>(BrewFermentables.class, "items/test_subclass.xml");
@@ -54,6 +56,7 @@ public class BrewMarshallerTest {
             assertEquals(refItems.get(idx).getUnit(), myItem.getUnit());
             assertEquals(refItems.get(idx).getEBC(), myItem.getEBC());
             assertEquals(refItems.get(idx).getPotentialGravity(), myItem.getPotentialGravity());
+            assertEquals(refItems.get(idx).isGrainBillCalc(), myItem.isGrainBillCalc());
             idx++;
         }
     }
