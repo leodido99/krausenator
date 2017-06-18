@@ -1,0 +1,18 @@
+<yeasts>
+    <yeast>
+        <name>WY1007 German Ale</name>
+        <description>A true top cropping yeast with low ester formation.</description>
+        <attenuationmin>73</attenuationmin>
+        <attenuationmax>77</attenuationmax>
+        <temperaturemin>12.7</temperaturemin>
+        <temperaturemax>20</temperaturemax>
+    </yeast>
+    <yeast>
+        <name>WY1010 American Wheat</name>
+        <description>A strong fermenting, true top cropping yeast that produces a dry, slightly tart, crisp beer.</description>
+        <attenuationmin>74</attenuationmin>
+        <attenuationmax>78</attenuationmax>
+        <temperaturemin>14.4</temperaturemin>
+        <temperaturemax>23.3</temperaturemax>
+    </yeast>
+</yeasts>

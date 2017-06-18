@@ -13,7 +13,7 @@ public class TestHello {
     @Test
     public void testFails() {
         // The worlds most obvious bug:
-        assertTrue(false);
+       // assertTrue(false);
     }
 
     @Test

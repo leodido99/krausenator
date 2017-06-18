@@ -1,0 +1,16 @@
+<fermentables>
+    <fermentable>
+        <name>In the Bill</name>
+        <description>This item does enter in the grain bill calculation</description>
+        <ebc>4</ebc>
+        <potentialGravity>1.035</potentialGravity>
+        <grainBillCalc>true</grainBillCalc>
+    </fermentable>
+    <fermentable>
+        <name>Not in the Bill</name>
+        <description>This item does not enter in the grain bill calculation</description>
+        <ebc>2</ebc>
+        <potentialGravity>1.030</potentialGravity>
+        <grainBillCalc>false</grainBillCalc>
+    </fermentable>
+</fermentables>

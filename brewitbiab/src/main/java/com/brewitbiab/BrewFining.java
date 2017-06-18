@@ -1,10 +1,11 @@
-package com.leo.brewitbiab;
+package com.brewitbiab;
 
-import java.util.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * 
  */
+@XmlRootElement(name = "fining")
 public class BrewFining extends BrewItem {
 
     /**

@@ -1,0 +1,12 @@
+<hops>
+    <hop>
+        <name>Cascade</name>
+        <description>Nice american floral hop.</description>
+        <alphaacid>7.5</alphaacid>
+    </hop>
+    <hop>
+        <name>Saaz</name>
+        <description>Nice european herbal hop.</description>
+        <alphaacid>3.4</alphaacid>
+    </hop>
+</hops>

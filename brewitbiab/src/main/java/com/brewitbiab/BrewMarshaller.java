@@ -1,9 +1,10 @@
-package com.leo.brewitbiab;
+package com.brewitbiab;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
@@ -28,11 +29,14 @@ public class BrewMarshaller <T> {
      * Try to extract objects of the generic type specified from the XML file
      * @param xmlFileName XML file to marshall
      */
-    public BrewMarshaller(Class<T> marshallTo, String xmlFileName) {
+    public BrewMarshaller(Class<T> marshallTo, String xmlFileName) throws FileNotFoundException {
         try {
             /* Get file from resource folder */
             ClassLoader classLoader = getClass().getClassLoader();
             File file = new File(classLoader.getResource(xmlFileName).getFile());
+            if (file.exists() == false) {
+                throw new FileNotFoundException();
+            }
             JAXBContext jaxbContext = JAXBContext.newInstance(marshallTo);
 
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();

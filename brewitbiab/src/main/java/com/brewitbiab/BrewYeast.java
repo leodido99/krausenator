@@ -1,10 +1,13 @@
-package com.leo.brewitbiab;
+package com.brewitbiab;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.*;
 
 /**
  * 
  */
+@XmlRootElement(name = "yeast")
 public class BrewYeast extends BrewItem {
 
     /**
@@ -27,6 +30,26 @@ public class BrewYeast extends BrewItem {
      * 
      */
     private float viability;
+
+    /**
+     *
+     */
+    private float attenuationMin;
+
+    /**
+     *
+     */
+    private float attenuationMax;
+
+    /**
+     *
+     */
+    private float temperatureMin;
+
+    /**
+     *
+     */
+    private float temperatureMax;
 
     /**
      * @return
@@ -79,5 +102,41 @@ public class BrewYeast extends BrewItem {
     @Override
     public void accept(BrewItemVisitor visitor) {
         visitor.visit(this);
+    }
+
+    public float getAttenuationMin() {
+        return attenuationMin;
+    }
+
+    @XmlElement(name = "attenuationmin")
+    public void setAttenuationMin(float attenuationMin) {
+        this.attenuationMin = attenuationMin;
+    }
+
+    public float getAttenuationMax() {
+        return attenuationMax;
+    }
+
+    @XmlElement(name = "attenuationmax")
+    public void setAttenuationMax(float attenuationMax) {
+        this.attenuationMax = attenuationMax;
+    }
+
+    public float getTemperatureMin() {
+        return temperatureMin;
+    }
+
+    @XmlElement(name = "temperaturemin")
+    public void setTemperatureMin(float temperatureMin) {
+        this.temperatureMin = temperatureMin;
+    }
+
+    public float getTemperatureMax() {
+        return temperatureMax;
+    }
+
+    @XmlElement(name = "temperaturemax")
+    public void setTemperatureMax(float temperatureMax) {
+        this.temperatureMax = temperatureMax;
     }
 }

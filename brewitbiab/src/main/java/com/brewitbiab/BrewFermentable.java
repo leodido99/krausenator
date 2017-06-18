@@ -1,4 +1,4 @@
-package com.leo.brewitbiab;
+package com.brewitbiab;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -14,6 +14,18 @@ public class BrewFermentable extends BrewItem {
      */
     public BrewFermentable() {
         super();
+    }
+
+    /**
+     * Copy constructor
+     * @param item item to copy
+     */
+    public BrewFermentable(BrewFermentable item) {
+        super(item);
+        this.ebc = item.ebc;
+        this.potentialGravity = item.potentialGravity;
+        this.producedGravity = item.producedGravity;
+        this.grainBillCalc = item.grainBillCalc;
     }
 
     /**

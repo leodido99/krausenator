@@ -1,8 +1,7 @@
-package com.leo.brewitbiab;
+package com.brewitbiab;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.*;
 
 /**
  * 
@@ -18,6 +17,17 @@ public class BrewItem {
         this.description = "";
         this.amount = 0.0f;
         this.unit = "";
+    }
+
+    /**
+     * Copy constructor
+     * @param item item to copy
+     */
+    public BrewItem(BrewItem item) {
+        this.name = item.name;
+        this.description = item.description;
+        this.amount = item.amount;
+        this.unit = item.unit;
     }
 
     /**

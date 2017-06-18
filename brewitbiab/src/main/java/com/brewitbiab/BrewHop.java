@@ -1,8 +1,12 @@
-package com.leo.brewitbiab;
+package com.brewitbiab;
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * 
  */
+@XmlRootElement(name = "hop")
 public class BrewHop extends BrewItem {
 
     /**
@@ -29,6 +33,7 @@ public class BrewHop extends BrewItem {
     /**
      * @param aa
      */
+    @XmlElement(name = "alphaacid")
     public void setAlphaAcidPercentage(float aa) {
         this.alphaAcidPercentage = aa;
     }

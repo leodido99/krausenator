@@ -1,5 +1,5 @@
-import com.leo.brewitbiab.BrewItem;
-import com.leo.brewitbiab.BrewItems;
+import com.brewitbiab.BrewItem;
+import com.brewitbiab.BrewItems;
 import org.junit.jupiter.api.Test;
 
 import javax.xml.bind.JAXBContext;
@@ -19,7 +19,7 @@ public class BrewItemGenerate {
         try {
             /* Get file from resource folder */
             ClassLoader classLoader = getClass().getClassLoader();
-            File file = new File(classLoader.getResource("items/test.xml").getFile());
+            File file = new File(classLoader.getResource("items/test/test.xml").getFile());
             //File file = new File("items/test.xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(BrewItems.class);
 
