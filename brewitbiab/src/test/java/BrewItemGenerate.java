@@ -1,5 +1,5 @@
-import com.brewitbiab.BrewItem;
-import com.brewitbiab.BrewItems;
+import com.brewitbiab.items.BrewItem;
+import com.brewitbiab.items.BrewItems;
 import org.junit.jupiter.api.Test;
 
 import javax.xml.bind.JAXBContext;

@@ -1,4 +1,4 @@
-package com.brewitbiab;
+package com.brewitbiab.recipe;
 
 /**
  * 

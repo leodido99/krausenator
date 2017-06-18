@@ -1,4 +1,6 @@
-package com.brewitbiab;
+package com.brewitbiab.items;
+
+import com.brewitbiab.manager.BrewItemVisitor;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

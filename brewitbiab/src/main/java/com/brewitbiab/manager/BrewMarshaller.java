@@ -1,4 +1,4 @@
-package com.brewitbiab;
+package com.brewitbiab.manager;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

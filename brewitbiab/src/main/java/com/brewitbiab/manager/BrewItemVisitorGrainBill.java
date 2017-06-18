@@ -1,4 +1,10 @@
-package com.brewitbiab;
+package com.brewitbiab.manager;
+
+import com.brewitbiab.items.BrewYeast;
+import com.brewitbiab.items.BrewFermentable;
+import com.brewitbiab.items.BrewFining;
+import com.brewitbiab.items.BrewHop;
+import com.brewitbiab.items.BrewItem;
 
 /**
  * 

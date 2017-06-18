@@ -1,4 +1,6 @@
-package com.brewitbiab;
+package com.brewitbiab.items;
+
+import com.brewitbiab.manager.BrewItemVisitor;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -25,19 +27,19 @@ public class BrewFining extends BrewItem {
     /**
      * 
      */
-    private e_BrewIt_FiningUse use;
+    private BrewFiningUsage use;
 
     /**
      * @param use
      */
-    public void setUse(e_BrewIt_FiningUse use) {
+    public void setUse(BrewFiningUsage use) {
         this.use = use;
     }
 
     /**
      * @return
      */
-    public e_BrewIt_FiningUse getUse() {
+    public BrewFiningUsage getUse() {
         return this.use;
     }
 

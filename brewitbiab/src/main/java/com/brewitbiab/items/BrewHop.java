@@ -1,4 +1,6 @@
-package com.brewitbiab;
+package com.brewitbiab.items;
+
+import com.brewitbiab.manager.BrewItemVisitor;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -38,7 +40,7 @@ public class BrewHop extends BrewItem {
     /**
      * 
      */
-    private e_BrewIt_HopUse use;
+    private BrewHopUsage use;
 
     /**
      * @param aa
@@ -72,14 +74,14 @@ public class BrewHop extends BrewItem {
     /**
      * @param use
      */
-    public void setUse(e_BrewIt_HopUse use) {
+    public void setUse(BrewHopUsage use) {
         this.use = use;
     }
 
     /**
      * @return
      */
-    public e_BrewIt_HopUse getUse() {
+    public BrewHopUsage getUse() {
         return this.use;
     }
 

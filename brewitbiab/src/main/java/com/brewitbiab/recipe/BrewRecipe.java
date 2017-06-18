@@ -1,4 +1,8 @@
-package com.brewitbiab;
+package com.brewitbiab.recipe;
+
+import com.brewitbiab.items.BrewFermentable;
+import com.brewitbiab.items.BrewItem;
+import com.brewitbiab.manager.BrewItemVisitorGrainBill;
 
 import java.util.*;
 

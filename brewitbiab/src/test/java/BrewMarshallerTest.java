@@ -1,4 +1,5 @@
-import com.brewitbiab.*;
+import com.brewitbiab.items.*;
+import com.brewitbiab.manager.BrewMarshaller;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;

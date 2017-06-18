@@ -1,4 +1,4 @@
-package com.brewitbiab;
+package com.brewitbiab.items;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -9,34 +9,34 @@ import java.util.*;
 /**
  * 
  */
-@XmlRootElement(name = "items")
+@XmlRootElement(name = "finings")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class BrewItems {
+public class BrewFinings {
 
     /**
      * Default constructor
      */
-    public BrewItems() {
+    public BrewFinings() {
     }
 
     /**
      * 
      */
-    @XmlElement(name = "item")
-    private ArrayList<BrewItem> items;
+    @XmlElement(name = "fining")
+    private ArrayList<BrewFining> finings;
 
     /**
      * @return
      */
-    public ArrayList<BrewItem> getItems() {
-        return this.items;
+    public ArrayList<BrewFining> getFinings() {
+        return this.finings;
     }
 
     /**
      * @param value
      */
-    public void setItems(ArrayList<BrewItem> value) {
-        this.items = value;
+    public void setFinings(ArrayList<BrewFining> value) {
+        this.finings = value;
     }
 
 }
