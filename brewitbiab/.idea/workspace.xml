@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52af06c0-2cb8-40ff-84a9-c84a320e33da" name="Default" comment="Work on krausenator">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/items/grains.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewFermentable.class" afterPath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewFermentable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewFining.class" afterPath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewFining.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewHop.class" afterPath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewHop.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewItem.class" afterPath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewRecipe.class" afterPath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewRecipe.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewYeast.class" afterPath="$PROJECT_DIR$/target/classes/com/leo/brewitbiab/BrewYeast.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewFermentables.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewItems.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewMarshaller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/items/fermentables.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/items/test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/items/test_subclass.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/BrewItemGenerate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/BrewMarshallerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/BrewRecipeTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewFermentable.java" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewFermentable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewFining.java" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewFining.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewHop.java" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewHop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewItem.java" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewRecipe.java" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewRecipe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewYeast.java" afterPath="$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewYeast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../recipetool.mdj" afterPath="$PROJECT_DIR$/../recipetool.mdj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,11 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrewFining.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BrewFining.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewFining.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrewItems.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewItems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -909,8 +913,16 @@
       <workItem from="1496999823525" duration="47000" />
       <workItem from="1496999984166" duration="288000" />
       <workItem from="1497618737919" duration="4335000" />
-      <workItem from="1497770940086" duration="287000" />
+      <workItem from="1497770940086" duration="417000" />
     </task>
+    <task id="LOCAL-00001" summary="Work on krausenator">
+      <created>1497771341380</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497771341380</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -946,11 +958,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27067000" />
+    <option name="totallyTimeSpent" value="27197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -967,7 +979,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1180,13 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewYeast.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1333,6 +1338,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.leo.brewitbiab/BrewItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>

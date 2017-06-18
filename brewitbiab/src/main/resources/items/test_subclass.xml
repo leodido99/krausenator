@@ -1,0 +1,16 @@
+<fermentables>
+	<fermentable>
+		<name>Maris Otter</name>
+		<description>A very nice base malt used in many beers.</description>	
+		<ebc>4</ebc>
+		<potentialGravity>1.035</potentialGravity>
+		<grainBillCalc>true</grainBillCalc>
+	</fermentable>
+	<fermentable>
+		<name>Wheat Malt</name>
+		<description>Wheat malt is used to improve foam retention.</description>	
+		<ebc>2</ebc>
+		<potentialGravity>1.030</potentialGravity>
+		<grainBillCalc>false</grainBillCalc>
+	</fermentable>	
+</fermentables>

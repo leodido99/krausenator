@@ -1,0 +1,19 @@
+<items>
+	<item>
+		<name>My Test Item #1</name>
+		<amount>12.5</amount>
+		<unit>kg</unit>
+	</item>
+	<item>
+		<name>This is item #2</name>
+		<description>This is a rad description</description>
+		<amount>123123.234</amount>
+		<unit>m</unit>
+	</item>
+	<item>
+		<name>Hello item #3</name>
+		<description>The most awesome item there is</description>
+		<amount>-123.34</amount>
+		<unit>g</unit>
+	</item>	
+</items>
